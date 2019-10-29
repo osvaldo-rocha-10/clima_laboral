@@ -1,0 +1,41 @@
+<! DOCTYPE html>
+<html lang = "en">
+<head>
+ <meta charset = "utf-8" />
+ <title> JavaScript - Botones de radio y validación de formulario </ title>
+ < script type = "text / javascript" >
+ 
+ // Este archivo usará la validación de formulario para formularios con botones de radio 
+ // Usando 'nombre' en los botones de radio, coloca estas dos opciones de botón de radio en el mismo grupo (la misma pregunta) 
+ // Valor es el texto que se muestra al lado de la radio botón que se ha seleccionado 
+ // ID identifica este elemento que puede ser utilizado por código JavaScript
+ 
+ // La función isChecked comprueba si se ha seleccionado una opción antes de continuar 
+ // .checked es una propiedad de un botón de opción (que el botón de opción ha sido marcado)
+ 
+ function isChecked ( ) { 
+ var checkedYes = document. getElementById ( 'me gusta' ) . comprobado ; 
+ var checkedNo = documento. getElementById ( 'dislike' ) . comprobado ;
+ 
+ if ( checkedSes ==  false  && checkedNo ==  false ) { 
+ alert ( '¡Tienes que seleccionar una opción!' ) ; 
+ volver  falsa ; 
+ } 
+ else { 
+ return  true ; 
+ } 
+ }
+ 
+ </ script >
+ 
+</ head>
+<cuerpo>
+<form action = "submission.html" method = "get" onsubmit = "return isChecked ();">
+ <p> ¿Te gusta la codificación? </ p>
+ Sí <input type = "radio" name = "coding" value = "Sí" id = "me gusta" /> <br/>
+ No <input type = "radio" name = "coding" value = "No" id = "dislike" /> <br/>
+ <input type = "submit" value = "Submit" />
+</ form>
+ 
+</ body>
+</ html>

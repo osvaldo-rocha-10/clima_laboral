@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+  <title>Iniciar | CLIMA LABORAL</title>
+  <meta charset="utf-8">
+  <link rel="icon"  href="img/logofa.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 70%}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #F1F1F1;
+      height: 140%;
+    }
+
+    h1 {
+      font-family: fantasy;
+      font-size: 650%;
+      /*font-size: 3vw, 3vh;*/
+      padding-top: 25%;
+    }
+
+    /*#loginform{
+      margin-top:-70px;
+      margin-left:auto;
+      margin-right:auto;
+      width:270px;
+    }*/
+
+    .input{
+      width:255px;
+      padding:13px 25px;
+      font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+      /*background: #f5f5f5;
+      border:5px;
+      border-radius: 10px;*/
+      color: #333;
+      font-size: 18px; 
+      margin-top:15px;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;}
+    }
+
+    @media (max-width: 1000px) {
+      h1 { font-size: 3em; }
+      .input;
+    }
+
+    
+
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav text-center">
+      <center>
+        <br><br><br>
+        <img class="img-responsive" src="img/fa-3.png"  width="250px" height="250px">
+        <br><br><br>
+      </center>
+      <ul class="nav nav-pills nav-stacked">
+        <h3>INGRESAR</h3>
+      </ul>
+      <div>
+        <form method="POST" action="valida.php" >
+          <input type="password" class="input text-center" name="clave" placeholder="INGRESE CONTRASEÑA"  required /> 
+          <br>
+          <input type="submit" class="input btn btn-warning" value="ENTRAR" />
+        </form>
+      </div>
+    </div>
+
+    <div class="col-sm-9">
+      <h1>BIENVENIDO
+        <span style="color: #6E6B6B;">CLIMA LABORAL </span>
+      </h1>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

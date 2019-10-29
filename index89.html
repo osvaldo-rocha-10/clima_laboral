@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" >
+<link rel="icon"  href="favicon1.ico">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Clima Laboral
+  </title>
+  
+  
+  
+  
+  
+</head>
+
+<body background="	#800000">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<!--<script src="https://code.highcharts.com/modules/export-data.js"></script>-->
+
+<div id="container" style="min-width: 1200px; max-width: 2200px; height: 500px; "></div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+<script type="text/javascript">
+	var a,b,c,d,e,f;
+a=10;
+b=0;
+c=0;
+d=4;
+e=8;
+f=50;
+Highcharts.chart('container', {
+
+  chart: {
+    polar: true,
+    type: 'line'
+
+  },
+
+  title: {
+
+    text: 'La Institucion',
+    x: -550
+  },
+
+ subtitle: {
+    text: 'Area RH',
+        x: -550
+
+  },
+   /* subtitle: {
+    text: 'Source: WorldClimate.com'
+  },*/
+
+  /*pane: {
+    size: '92%'
+  },*/
+
+  xAxis: {
+    categories: ['1.Me siento orgulloso y feliz de trabajar en esta Institución', '2.El trato que recibo es cordial y respetuoso','3.Yo recomiendo a otros que trabajen aquí', '4.Conozco cuál es la misión y visión de la Institución',
+      '5.Yo pienso que estaré trabajando en esta Institución por muchos años', '6. Mis objetivos personales contribuyen claramente a los objetivos de la Institución'],
+    tickmarkPlacement: 'on',
+    lineWidth: 0
+  },
+
+  yAxis: {
+    gridLineInterpolation: 'polygon',
+    lineWidth: 0,
+    min: 0
+  },
+
+  /*tooltip: {
+    shared: true,
+    pointFormat: 'color:{series.name}: <b>${point.y:,.0f}</b><br/>'
+  },*/
+
+  legend: {
+    align: 'right',
+    verticalAlign: 'top',
+    y: 70,
+    layout: 'vertical'
+  },
+
+  series: [{
+    name: 'Siempre',
+    
+    data: [90, b, c, d, e, f],
+    pointPlacement: 'on'
+  }, 
+  {
+    name: 'Casi Siempre',
+    data: [80, b, c, d, e, f],
+    pointPlacement: 'on'
+  }, {
+    name: 'Algunas Veces',
+    data: [70, b, c, d, e,f],
+    pointPlacement: 'on'
+  },
+{
+    name: 'Casi Nunca',
+    data: [10,b, c, d, e,f],
+    pointPlacement: 'on'
+  },
+
+
+
+{
+    name: ' Nunca',
+    data: [15,b, c, d, e,f],
+    pointPlacement: 'on'
+  },
+  ]
+
+});
+
+
+	
+</script>
+
+
+</body>
+
+</html>
